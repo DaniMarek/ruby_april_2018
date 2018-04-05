@@ -1,0 +1,57 @@
+  [1m[36m (60.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (52.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (13.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20180404185559)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (43.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email_address" varchar, "age" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (17.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180404185559"]]
+  [1m[35m (27.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (18.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (48.1ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email_address", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Juana"], ["last_name", "Garcia"], ["email_address", "jgarcia@gmail.com"], ["age", 30], ["created_at", "2018-04-04 22:44:24.839668"], ["updated_at", "2018-04-04 22:44:24.839668"]]
+  [1m[36m (42.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (47.4ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email_address", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Toto"], ["last_name", "Jenkins"], ["email_address", "tjenkins@gmail.com"], ["age", 5], ["created_at", "2018-04-04 22:47:05.452755"], ["updated_at", "2018-04-04 22:47:05.452755"]]
+  [1m[35m (25.4ms)[0m  commit transaction
+  [1m[36mUser Load (93.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (30.9ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (28.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (19.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (51.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."first_name" = ? LIMIT 1[0m  [["first_name", "Toto"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (28.6ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email_address", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Ginger"], ["last_name", "Marek"], ["email_address", "gmarek@gmail.com"], ["age", 11], ["created_at", "2018-04-05 13:14:55.548600"], ["updated_at", "2018-04-05 13:14:55.548600"]]
+  [1m[35m (20.6ms)[0m  commit transaction
+  [1m[36mUser Load (25.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."first_name" = ? LIMIT 1[0m  [["first_name", "Juana"]]
+  [1m[35mUser Load (24.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."first_name" = ?  [["first_name", "Ginger"]]
+  [1m[36mUser Load (35.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."last_name" = ?[0m  [["last_name", "Marek"]]
+  [1m[35mUser Load (15.8ms)[0m  SELECT "users"."first_name", "users"."last_name", "email" FROM "users" WHERE "users"."last_name" = ?  [["last_name", "Jenkins"]]
+  [1m[36mUser Load (19.5ms)[0m  [1mSELECT "users"."first_name", "users"."last_name", "users"."email_address" FROM "users" WHERE "users"."last_name" = ?[0m  [["last_name", "Jenkins"]]
+  [1m[35mUser Load (22.0ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (35.0ms)[0m  UPDATE "users" SET "age" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["age", 29], ["updated_at", "2018-04-05 13:34:13.412616"], ["id", 1]]
+  [1m[36m (27.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (16.9ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (29.7ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1 OFFSET 1[0m
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mSQL (68.5ms)[0m  [1mUPDATE "users" SET "age" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["age", 7], ["updated_at", "2018-04-05 13:48:10.244736"], ["id", 2]]
+  [1m[35m (31.6ms)[0m  commit transaction
+  [1m[36mUser Load (24.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (28.8ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  [1m[36mUser Load (38.6ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (54.5ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (62.6ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (54.8ms)[0m  INSERT INTO "users" ("first_name", "created_at", "updated_at") VALUES (?, ?, ?)  [["first_name", ""], ["created_at", "2018-04-05 17:01:31.830279"], ["updated_at", "2018-04-05 17:01:31.830279"]]
+  [1m[36m (69.9ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (15.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (12.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (9.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (9.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
