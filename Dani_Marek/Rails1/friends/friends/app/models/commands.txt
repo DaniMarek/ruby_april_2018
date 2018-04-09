@@ -1,0 +1,349 @@
+ed)>'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `block in require'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+        from /vagrant/rails/friends/bin/rails:9:in `<top (required)>'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `block in load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/commands/rails.rb:6:in `call'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/command_wrapper.rb:38:in `call'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:201:in `block in serve'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `fork'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `serve'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:141:in `block in run'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `loop'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `run'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application/boot.rb:19:in `<top (required)>'
+        from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+        from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+        from -e:1:in `<main>'
+2.3.1 :043 > casey
++----+------------+-----------+-------------------------+-------------------------+
+| id | first_name | last_name | created_at              | updated_at              |
++----+------------+-----------+-------------------------+-------------------------+
+| 1  | Casey      | Tequila   | 2018-04-05 20:09:52 UTC | 2018-04-05 20:09:52 UTC |
++----+------------+-----------+-------------------------+-------------------------+
+1 row in set
+2.3.1 :044 > User.where.not(casey.friendships)
+NoMethodError: undefined method `friendships' for #<User:0x00000002517de8>
+Did you mean?  friends
+               friendship_friends
+               friendship_friends=
+               friends=
+               friendship_friend_ids=
+               friending
+               friendship_friending
+               friend_ids
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activemodel-4.2.7/lib/active_model/attribute_methods.rb:433:in `method_missing'
+        from (irb):44
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `block in require'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+        from /vagrant/rails/friends/bin/rails:9:in `<top (required)>'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `block in load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/commands/rails.rb:6:in `call'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/command_wrapper.rb:38:in `call'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:201:in `block in serve'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `fork'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `serve'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:141:in `block in run'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `loop'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `run'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application/boot.rb:19:in `<top (required)>'
+        from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+        from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+        from -e:1:in `<main>'
+2.3.1 :045 > User.where.not(casey.friendship)
+NoMethodError: undefined method `friendship' for #<User:0x00000002517de8>
+Did you mean?  friends
+               friends=
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activemodel-4.2.7/lib/active_model/attribute_methods.rb:433:in `method_missing'
+        from (irb):45
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `block in require'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+        from /vagrant/rails/friends/bin/rails:9:in `<top (required)>'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `block in load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/commands/rails.rb:6:in `call'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/command_wrapper.rb:38:in `call'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:201:in `block in serve'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `fork'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `serve'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:141:in `block in run'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `loop'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `run'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application/boot.rb:19:in `<top (required)>'
+        from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+        from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+        from -e:1:in `<main>'
+2.3.1 :046 > User.where.not(casey.friend)
+NoMethodError: undefined method `friend' for #<User:0x00000002517de8>
+Did you mean?  friends
+               friends=
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activemodel-4.2.7/lib/active_model/attribute_methods.rb:433:in `method_missing'
+        from (irb):46
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `block in require'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+        from /vagrant/rails/friends/bin/rails:9:in `<top (required)>'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `block in load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/commands/rails.rb:6:in `call'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/command_wrapper.rb:38:in `call'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:201:in `block in serve'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `fork'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `serve'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:141:in `block in run'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `loop'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `run'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application/boot.rb:19:in `<top (required)>'
+        from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+        from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+        from -e:1:in `<main>'
+2.3.1 :047 > User.first.friends
+  User Load (1.6ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  User Load (0.9ms)  SELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."friendee_id" = ?  [["friendee_id", 1]]
++----+------------+-----------+-------------------------+-------------------------+
+| id | first_name | last_name | created_at              | updated_at              |
++----+------------+-----------+-------------------------+-------------------------+
+| 3  | Mikey      | PingPong  | 2018-04-05 20:11:51 UTC | 2018-04-05 20:11:51 UTC |
++----+------------+-----------+-------------------------+-------------------------+
+1 row in set
+2.3.1 :048 > casey = User.first.friends
+  User Load (1.7ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  User Load (1.9ms)  SELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."friendee_id" = ?  [["friendee_id", 1]]
++----+------------+-----------+-------------------------+-------------------------+
+| id | first_name | last_name | created_at              | updated_at              |
++----+------------+-----------+-------------------------+-------------------------+
+| 3  | Mikey      | PingPong  | 2018-04-05 20:11:51 UTC | 2018-04-05 20:11:51 UTC |
++----+------------+-----------+-------------------------+-------------------------+
+1 row in set
+2.3.1 :049 > User.where.not(casey)
+Hirb Error: Cannot visit User::ActiveRecord_Associations_CollectionProxy
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:19:in `rescue in visit'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:13:in `visit'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:617:in `visit_Arel_Nodes_Not'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:13:in `visit'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:437:in `visit_Arel_Nodes_Grouping'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:13:in `visit'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:795:in `block in inject_join'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:793:in `each'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:793:in `each_with_index'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:793:in `each'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:793:in `inject'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:793:in `inject_join'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:650:in `visit_Arel_Nodes_And'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:13:in `visit'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:255:in `block in visit_Arel_Nodes_SelectCore'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:254:in `each'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:254:in `each_with_index'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:254:in `visit_Arel_Nodes_SelectCore'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:210:in `block in visit_Arel_Nodes_SelectStatement'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:209:in `each'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:209:in `inject'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:209:in `visit_Arel_Nodes_SelectStatement'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/sqlite.rb:13:in `visit_Arel_Nodes_SelectStatement'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:13:in `visit'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:7:in `accept'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:12:in `to_sql'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:32:in `select_all'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/query_cache.rb:70:in `select_all'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/querying.rb:39:in `find_by_sql'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/relation.rb:639:in `exec_queries'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/relation.rb:515:in `load'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/relation.rb:243:in `to_a'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/relation/delegation.rb:46:in `to_ary'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/formatter.rb:88:in `Array'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/formatter.rb:88:in `determine_output_class'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/formatter.rb:53:in `format_output'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/view.rb:205:in `render_output'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/view.rb:123:in `view_output'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/view.rb:201:in `view_or_page_output'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/view.rb:187:in `output_value'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:490:in `block (2 levels) in eval_input'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:623:in `signal_status'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:486:in `block in eval_input'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb/ruby-lex.rb:246:in `block (2 levels) in each_top_level_statement'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb/ruby-lex.rb:232:in `loop'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb/ruby-lex.rb:232:in `block in each_top_level_statement'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb/ruby-lex.rb:231:in `catch'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb/ruby-lex.rb:231:in `each_top_level_statement'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:485:in `eval_input'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:395:in `block in start'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:394:in `catch'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:394:in `start'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `block in require'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+    /vagrant/rails/friends/bin/rails:9:in `<top (required)>'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `block in load'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+    -e:1:in `<main>'
+2.3.1 :050 > User.where.not(casey.friends)
+NoMethodError: undefined method `friends' for #<User::ActiveRecord_Associations_CollectionProxy:0x0000000422eeb8>
+Did you mean?  find
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/relation/delegation.rb:136:in `method_missing'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/relation/delegation.rb:99:in `method_missing'
+        from (irb):50
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `block in require'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+        from /vagrant/rails/friends/bin/rails:9:in `<top (required)>'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `block in load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/commands/rails.rb:6:in `call'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/command_wrapper.rb:38:in `call'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:201:in `block in serve'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `fork'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:171:in `serve'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:141:in `block in run'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `loop'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application.rb:135:in `run'
+        from /home/vagrant/.rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/application/boot.rb:19:in `<top (required)>'
+        from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+        from /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+        from -e:1:in `<main>'
+2.3.1 :051 > User.where.not(User.first.friends)
+  User Load (1.7ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+Hirb Error: Cannot visit User::ActiveRecord_Associations_CollectionProxy
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:19:in `rescue in visit'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:13:in `visit'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:617:in `visit_Arel_Nodes_Not'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:13:in `visit'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:437:in `visit_Arel_Nodes_Grouping'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:13:in `visit'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:795:in `block in inject_join'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:793:in `each'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:793:in `each_with_index'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:793:in `each'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:793:in `inject'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:793:in `inject_join'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:650:in `visit_Arel_Nodes_And'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:13:in `visit'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:255:in `block in visit_Arel_Nodes_SelectCore'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:254:in `each'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:254:in `each_with_index'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:254:in `visit_Arel_Nodes_SelectCore'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:210:in `block in visit_Arel_Nodes_SelectStatement'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:209:in `each'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:209:in `inject'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/to_sql.rb:209:in `visit_Arel_Nodes_SelectStatement'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/sqlite.rb:13:in `visit_Arel_Nodes_SelectStatement'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:13:in `visit'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/arel-6.0.4/lib/arel/visitors/reduce.rb:7:in `accept'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:12:in `to_sql'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/database_statements.rb:32:in `select_all'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/connection_adapters/abstract/query_cache.rb:70:in `select_all'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/querying.rb:39:in `find_by_sql'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/relation.rb:639:in `exec_queries'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/relation.rb:515:in `load'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/relation.rb:243:in `to_a'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.7/lib/active_record/relation/delegation.rb:46:in `to_ary'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/formatter.rb:88:in `Array'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/formatter.rb:88:in `determine_output_class'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/formatter.rb:53:in `format_output'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/view.rb:205:in `render_output'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/view.rb:123:in `view_output'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/view.rb:201:in `view_or_page_output'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/hirb-0.7.3/lib/hirb/view.rb:187:in `output_value'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:490:in `block (2 levels) in eval_input'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:623:in `signal_status'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:486:in `block in eval_input'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb/ruby-lex.rb:246:in `block (2 levels) in each_top_level_statement'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb/ruby-lex.rb:232:in `loop'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb/ruby-lex.rb:232:in `block in each_top_level_statement'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb/ruby-lex.rb:231:in `catch'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb/ruby-lex.rb:231:in `each_top_level_statement'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:485:in `eval_input'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:395:in `block in start'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:394:in `catch'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/irb.rb:394:in `start'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:110:in `start'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/console.rb:9:in `start'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:68:in `console'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/railties-4.2.7/lib/rails/commands.rb:17:in `<top (required)>'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `block in require'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:274:in `require'
+    /vagrant/rails/friends/bin/rails:9:in `<top (required)>'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `block in load'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:240:in `load_dependency'
+    /home/vagrant/.rvm/gems/ruby-2.3.1/gems/activesupport-4.2.7/lib/active_support/dependencies.rb:268:in `load'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+    /home/vagrant/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+    -e:1:in `<main>'
+2.3.1 :052 > friends = User.first.friends
+  User Load (1.1ms)  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  User Load (1.0ms)  SELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."friendee_id" = ?  [["friendee_id", 1]]
++----+------------+-----------+-------------------------+-------------------------+
+| id | first_name | last_name | created_at              | updated_at              |
++----+------------+-----------+-------------------------+-------------------------+
+| 3  | Mikey      | PingPong  | 2018-04-05 20:11:51 UTC | 2018-04-05 20:11:51 UTC |
++----+------------+-----------+-------------------------+-------------------------+
+1 row in set
+2.3.1 :053 > friends
++----+------------+-----------+-------------------------+-------------------------+
+| id | first_name | last_name | created_at              | updated_at              |
++----+------------+-----------+-------------------------+-------------------------+
+| 3  | Mikey      | PingPong  | 2018-04-05 20:11:51 UTC | 2018-04-05 20:11:51 UTC |
++----+------------+-----------+-------------------------+-------------------------+
+1 row in set
+2.3.1 :054 > User.where.not(id:friends)
+  User Load (0.9ms)  SELECT "users".* FROM "users" WHERE ("users"."id" NOT IN (SELECT "users"."id" FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."friendee_id" = ?))  [["friendee_id", 1]]
++----+------------+-----------+-------------------------+-------------------------+
+| id | first_name | last_name | created_at              | updated_at              |
++----+------------+-----------+-------------------------+-------------------------+
+| 1  | Casey      | Tequila   | 2018-04-05 20:09:52 UTC | 2018-04-05 20:09:52 UTC |
+| 2  | Jesus      | isJewish  | 2018-04-05 20:10:53 UTC | 2018-04-05 20:10:53 UTC |
++----+------------+-----------+-------------------------+-------------------------+
+2 rows in set
